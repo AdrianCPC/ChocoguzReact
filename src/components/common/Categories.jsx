@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from './Button'
 
 const Categories = () => {
 
@@ -7,7 +8,7 @@ const Categories = () => {
     }
     return (
         <div>
-            <button onClick={()=>{pulsar()}}>Categorias</button>
+            <Button onClick={()=>{pulsar()}}>Categorias</Button>
         </div>
     )
 }

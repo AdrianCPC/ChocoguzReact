@@ -5,6 +5,9 @@ const Cantidad = () => {
 
     const pluss = () => setCantidad(cantidad + 1);
     const less = () => setCantidad(cantidad - 1);
+    if(cantidad<0){
+        setCantidad(0)
+    }
     return (
         <div>
             <h1>Cantidad: {cantidad}</h1>

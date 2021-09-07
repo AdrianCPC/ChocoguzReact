@@ -1,15 +1,12 @@
-import './styles/App.css';
-import Categories from './components/common/Categories';
-import MenuItems from './components/layout/Header/MenuItems';
-import Cantidad from './components/hooks/Cantidad';
+import React from "react";
+import Navbar from "./components/layout/Header/Navbar";
+
 
 
 function App() {
   return (
     <div>
-      <MenuItems></MenuItems>
-      <Categories/>
-      <Cantidad />
+      <Navbar />
     </div>
   );
 }
