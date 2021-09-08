@@ -28,6 +28,7 @@ align-items: center;
 flex-wrap: wrap;
 justify-content: center;
 font-size: 0.2em;
+padding-left: 1rem;
 `;
 
 //Making menu for navbar
@@ -36,6 +37,18 @@ height: 100%;
 display: flex;
 justify-content: center;
 align-items: center;
+
+//Media query
+@media screen and (max-width: 768px) {
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 80px;
+    left: ${({click}) => click ? 0 : "-100%"};
+    flex-direction: column;
+    transition: 0.5s all ease-in;
+    background-color: #4C1C0A;
+}
 `;
 export const MenuItem = styled.li`
 height: 100%;
@@ -53,6 +66,12 @@ font-weight: normal;
     border-bottom: 2px solid #3d1708;
     transition: 0.4s ease-in;
 }
+
+//Media query
+@media screen and (max-width: 768px) {
+    width: 100%;
+    height: 70px;
+}
 `;
 
 export const MenuItemLink = styled.a`
@@ -60,7 +79,7 @@ text-decoration: none;
 color: #3d1708;
 `;
 
-//Making Mobile mode
+//Making Mobile mode - hamburger
 export const IconLogoMobile = styled.div`
 display: none;
 
@@ -69,6 +88,7 @@ display: none;
     display: flex;
     color: #3d1708;
     font-size: 2rem;
+    padding-right: 1rem;
 }
 `;
 
