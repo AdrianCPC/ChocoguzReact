@@ -1,6 +1,5 @@
 import React from "react";
-import Navbar from "./components/layout/Header/Navbar";
-
+import Navbar from "./components/layout/Navbar";
 
 
 function App() {

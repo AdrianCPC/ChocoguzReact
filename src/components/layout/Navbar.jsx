@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import { Iconlogo, IconLogoMobile, Menu, MenuItem, MenuItemLink, NavbarContainer, NavbarWrapper } from './Navbar.elements'
-import ChocoGuz from '../../../assets/icons/ChocoGuz.svg'
+import ChocoGuz from '../../assets/icons/ChocoGuz.svg';
 import { FaBars} from 'react-icons/fa';
 import {CgCloseO} from 'react-icons/cg';
 
@@ -15,9 +15,6 @@ const ChangeClick = () => setClick(!click);
         <>
         <NavbarContainer>
             <NavbarWrapper>
-                <Iconlogo>
-                    <img src={ChocoGuz} alt="logo" />
-                </Iconlogo>
                 <IconLogoMobile onClick={() => ChangeClick()}>
                     {click ? <CgCloseO /> : <FaBars />}
                 </IconLogoMobile>
@@ -38,6 +35,9 @@ const ChangeClick = () => setClick(!click);
                     </MenuItemLink>
                     </MenuItem>
                 </Menu>
+                <Iconlogo>
+                    <img src={ChocoGuz} alt="logo" />
+                </Iconlogo>
             </NavbarWrapper>
         </NavbarContainer>
         </>

@@ -74,6 +74,7 @@ font-weight: normal;
 }
 `;
 
+//Making links without link
 export const MenuItemLink = styled.a`
 text-decoration: none;
 color: #3d1708;
