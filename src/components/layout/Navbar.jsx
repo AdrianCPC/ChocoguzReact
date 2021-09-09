@@ -14,28 +14,28 @@ const ChangeClick = () => setClick(!click);
     return (
         <>
         <NavbarContainer>
-            <NavbarWrapper>
-                <IconLogoMobile onClick={() => ChangeClick()}>
+            <NavbarWrapper className="wrapper">
+                <IconLogoMobile onClick={() => ChangeClick()} className="toggle">
                     {click ? <CgCloseO /> : <FaBars />}
                 </IconLogoMobile>
-                <Menu click ={click}>
-                    <MenuItem onClick={() => ChangeClick()}>
+                <Menu className="menu">
+                    <MenuItem onClick={() => ChangeClick()} className="home">
                     <MenuItemLink>
                     INICIO
                     </MenuItemLink>
                     </MenuItem>
-                    <MenuItem onClick={() => ChangeClick()}>
+                    <MenuItem onClick={() => ChangeClick()} className="shop">
                     <MenuItemLink>
                     TIENDA
                     </MenuItemLink>
                     </MenuItem>
-                    <MenuItem onClick={() => ChangeClick()}>
+                    <MenuItem onClick={() => ChangeClick()} className="cart">
                     <MenuItemLink>
                     CARRITO
                     </MenuItemLink>
                     </MenuItem>
                 </Menu>
-                <Iconlogo>
+                <Iconlogo className="logo">
                     <img src={ChocoGuz} alt="logo" />
                 </Iconlogo>
             </NavbarWrapper>
