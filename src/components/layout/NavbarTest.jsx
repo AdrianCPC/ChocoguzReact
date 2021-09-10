@@ -10,6 +10,7 @@ const Navbar = () => {
 const[click, setClick] = useState(false); 
 
 const ChangeClick = () => setClick(!click);
+console.log(click);
 
     return (
         <>
