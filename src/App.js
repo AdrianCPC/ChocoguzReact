@@ -1,18 +1,23 @@
 import React from "react";
-import Navbar from "./components/layout/Navbar";
-import { BrowserRouter  as Router} from "react-router-dom";
-import Routes from "./components/Routes/Routes";
-import Data from "./components/common/Data"
+import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import Navbar from "./components/common/Navbar";
+import Footer from "./components/Pages/Footer";
+import Home from "./components/Pages/Home";
+import Shop from "./components/Pages/Shop";
+
 
 function App() {
-    //Items
-    const {productItems} = Data;
     return (
         <div>
-        <Router>
-        <Navbar />
-        <Routes productItems={productItems}/>
-        </Router>
+            <Router>
+            <Navbar />
+            <Switch>
+                <Route path="/" exact component={Home}/>
+                <Route path="/shop" exact component={Shop}/>
+                <Route path="/all" exact component={Shop}/>
+            </Switch>
+            <Footer/>
+            </Router>
         </div>
     );
 }
