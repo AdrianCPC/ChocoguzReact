@@ -1,3 +1,8 @@
+/**
+ * ESTE CODIGO ES UNA PRUEBA DE STYLED COMPONENT MAS MENU DESPLEGABLE
+ * Y NO REPRESENTA EL PROYECTO PRINCIPAL
+ */
+
 import styled from 'styled-components'
 
 //Styles container navbar
