@@ -35,6 +35,7 @@
     font-weight: 600;
 }
 
+
 /*---MAIN ASK--*/
 .main-ask {
     width: 100%;
@@ -44,9 +45,44 @@
 .main-ask h1 {
     display: flex;
     justify-content: center;
-    padding: 30px;
+    padding: 28px;
     color: #e2e5e7;
     font-family: 'Montserrat', sans-serif;
     font-size: 48px;
     font-weight: 600;
+}
+.message {
+    display: flex;
+    justify-content: center;
+    color: #e2e5e7;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+.time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    color: #e2e5e7;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding-top: 30px;
+}
+.time #day {
+    font-size: 24px;
+    font-weight: 500;
+    color: #e2e2e2;
+}
+.media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    gap: 20px;
+    color: #a9a9a9;
+    padding: 15px
 }

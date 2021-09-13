@@ -14,7 +14,7 @@ const Shop = () => {
                         <Link to="/all">Todos los productos</Link>
                     </li>
                     <li>
-                        <Link to="/mesa">Chocolate de Mesa</Link>
+                        <Link to="/natural">Chocolate de Mesa</Link>
                     </li>
                     <li>
                         <Link to="/tentacion">Chocotentacíon</Link>

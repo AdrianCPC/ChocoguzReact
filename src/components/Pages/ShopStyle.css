@@ -9,17 +9,31 @@
 /*---CATEGORIES STYLES*/
 .categories ul li {
     list-style: none;
-    padding: 10px;
+    padding: 10px 100px 10px 70px;
 }
 .categories a {
     text-decoration: none;
     color: #3d1708;
     font-family: 'Montserrat',sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
 }
 .categories ul li a:hover,
 .categories ul li a.active {
     font-weight: 500;
     transition: 2s ease-out;
+}
+
+/*---PRODUCT LIST---*/
+.productList {
+    color: #3d1708;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+    gap: 70px;
+    padding: 10px;
 }
