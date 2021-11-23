@@ -20,7 +20,7 @@ const Shop = () => {
                         <Link to="/tentacion">Chocotentacíon</Link>
                     </li>
                     <li>
-                        <Link to="cortado">Chocortado</Link>
+                        <Link to="/cortado">Chocortado</Link>
                     </li>
                 </ul>
             </section>
